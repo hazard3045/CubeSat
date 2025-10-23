@@ -1,0 +1,8 @@
+../Core/Src/BME.c:45:7:BME280_CONFIG_SETUP_ref	8	static
+../Core/Src/BME.c:70:7:BME280_GET_RAW_VALS_ref	8	static
+../Core/Src/BME.c:82:7:BME280_GET_COMP_VALS_ref	8	static
+../Core/Src/BME.c:127:7:BME280_CALC_FINAL_VALS_ref	24	static
+../Core/Src/BME.c:170:7:BME280_CONFIG_SETUP_N	8	static
+../Core/Src/BME.c:195:7:BME280_GET_RAW_VALS_N	8	static
+../Core/Src/BME.c:207:7:BME280_GET_COMP_VALS_N	8	static
+../Core/Src/BME.c:251:7:BME280_CALC_FINAL_VALS_N	24	static

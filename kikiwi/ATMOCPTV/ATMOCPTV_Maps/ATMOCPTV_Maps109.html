@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kikiwi OpenStreetMap</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+</head>
+<body>
+<div id="mapid" style="width: 1181px; height: 343px;"></div>
+<script>
+    var mymap = L.map('mapid').setView([48.357889,-4.568993], 14);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+      id: 'mapbox.streets',
+      minZoom: 3, maxZoom: 19
+    }).addTo(mymap);
+    var marker = L.marker([48.357889,-4.568993]).addTo(mymap);
+    var latlngs = [
+        [48.357811,-4.568918],
+        [48.357811,-4.568918],
+        [48.357811,-4.568918],
+        [48.357811,-4.568918],
+        [48.357811,-4.568918],
+        [48.357811,-4.568918],
+        [48.357841,-4.568947],
+        [48.357867,-4.568903],
+        [48.357892,-4.568845],
+        [48.357892,-4.568767],
+        [48.357883,-4.568703],
+        [48.357878,-4.568633],
+        [48.357883,-4.568558],
+        [48.357915,-4.568517],
+        [48.357941,-4.568493],
+        [48.357976,-4.568460],
+        [48.358009,-4.568437],
+        [48.358050,-4.568410],
+        [48.358076,-4.568377],
+        [48.358129,-4.568350],
+        [48.358115,-4.568352],
+        [48.358074,-4.568375],
+        [48.358016,-4.568387],
+        [48.357968,-4.568415],
+        [48.357939,-4.568447],
+        [48.357891,-4.568453],
+        [48.357846,-4.568467],
+        [48.357804,-4.568470],
+        [48.357761,-4.568470],
+        [48.357717,-4.568453],
+        [48.357687,-4.568455],
+        [48.357692,-4.568533],
+        [48.357735,-4.568585],
+        [48.357761,-4.568633],
+        [48.357772,-4.568698],
+        [48.357768,-4.568755],
+        [48.357800,-4.568808],
+        [48.357817,-4.568857],
+        [48.357850,-4.568902],
+        [48.357854,-4.568958],
+        [48.357876,-4.568993],
+        [48.357887,-4.568992],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993],
+        [48.357889,-4.568993]
+	  ];
+      var polyline = L.polyline(latlngs, {color: '#FF0000', weight: 2}).addTo(mymap);
+</script>
+</body>
+</html>

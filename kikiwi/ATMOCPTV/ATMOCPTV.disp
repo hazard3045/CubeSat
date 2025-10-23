@@ -1,0 +1,29 @@
+[RECURRENCE]
+00003
+[DATA STORAGE]
+SDCard=TRUE
+[EXTERN DATA]
+Serial=TRUE
+SerialPortRedirection=COM---
+[DISPLAY]
+[CHANNELS]
+CHANNEL_1 = Voie 1
+CHANNEL_2 = Voie 2
+CHANNEL_3 = Voie 3
+CHANNEL_4 = Voie 4
+CHANNEL_5 = Voie 5
+CHANNEL_6 = Voie 6
+CHANNEL_7 = Voie 7
+CHANNEL_8 = Voie 8
+
+COLOR_1 = clRed
+COLOR_2 = clLime
+COLOR_3 = clAqua
+COLOR_4 = clFuchsia
+COLOR_5 = clMaroon
+COLOR_6 = clMoneyGreen
+COLOR_7 = clSkyBlue
+COLOR_8 = clPurple
+
+[GRAPHS]
+NUMBER = 0
